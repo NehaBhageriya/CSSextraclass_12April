@@ -1,0 +1,56 @@
+.box{
+    width:200px;
+    height:200px;
+    border :2px solid red;
+    box-shadow: 2px 2px 5px red; /*horizonal value,verical value,blur,boxshadow size,color
+*/    text-shadow: 2px 2px 5px grey;
+    font-size:35px;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in;
+    transition-property: transform;
+}
+
+/* scale x:which will double (2) the width of the element  */
+/* scale y :which will increase our height */
+/* skew x :it should be given in deg only ,it will move the box*/
+/* rotated :it will rotated item .it also give in degree  for 360deg :-transition duration need to mension*/
+.box:hover{
+    width:400px;
+    transform: scaleX(2); /*scaleY(2) ,scale(2,2)/scale(x,y)*/
+transform:skew(20deg);/*skewx,skewy(20deg),skew(20deg,20deg)/skew(x,y)*/
+
+ transform: rotate(360deg);/*rotatex(20deg),rotatey(20deg),rotate() */
+}
+.box1{
+    width:200px;
+    height:200px;
+    border :2px solid red;
+    transition-property: transform;
+}
+.box1:hover{
+    transform: translate(500px);/*it will move box 500px from its original position*/
+}
+
+.index {
+    border: 2px solid red;
+    margin-top: 20%;
+    margin-left: 40%}
+    .box2 {
+        width: 250px;
+        height: 200px;
+        background-color: purple;
+        position: absolute;
+        top: 550px;
+        left: 25px;
+        z-index: -1;
+    }
+    .box3 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 580px;
+        left: 50px;
+        background-color: green;
+        z-index: +1;}
